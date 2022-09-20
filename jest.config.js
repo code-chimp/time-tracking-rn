@@ -1,0 +1,23 @@
+module.exports = {
+  preset: 'jest-expo',
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '!<rootDir>/coverage/',
+    '!<rootDir>/node_modules/',
+    '!<rootDir>/wiki/',
+    '!<rootDir>/babel.config.js',
+    '!<rootDir>/metro.config.js',
+    '!<rootDir>/**/*.d.ts',
+    '<rootDir>/**/*.{ts,tsx}',
+    '!<rootDir>/**/*.styles.ts',
+    '!<rootDir>/**/index.ts',
+    '!<rootDir>/@enumerations/**',
+    '!<rootDir>/@interfaces/**',
+    '!<rootDir>/@mocks/**',
+    '!<rootDir>/@types/**',
+    '!<rootDir>/assets/**',
+    '!<rootDir>/theme/**',
+    '!<rootDir>/setupTests.ts',
+  ],
+};
