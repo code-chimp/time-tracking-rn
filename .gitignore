@@ -13,4 +13,7 @@ web-build/
 # macOS
 .DS_Store
 
+# 'cause I vim a lot
+*.swp
+
 coverage/
